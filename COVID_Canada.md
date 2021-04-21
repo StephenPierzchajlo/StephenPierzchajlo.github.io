@@ -1,6 +1,7 @@
 Exploring COVID-19 Infections In Canada
 ================
 Stephen Pierzchajlo
+output: rmarkdown::github_document
 
 <div class="figure">
 

@@ -17,6 +17,8 @@
 
 [COVID-19 Canada](/COVID_Canada.md)
 
+[COVID-19 Canada2](/COVID-19---Canada/src/COVID_Canada.md)
+
 ---
 
 ### Category Name 2

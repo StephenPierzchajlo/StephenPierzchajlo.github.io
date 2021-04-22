@@ -2,7 +2,7 @@
 
 ---
 
-### Category Name 1 
+### R Projects 
 
 #[Project 1 Title](/sample_page)
 #<img src="images/dummy_thumbnail.jpg?raw=true"/>
@@ -16,8 +16,7 @@
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 [COVID-19 Canada](/COVID_Canada.md)
-
-[COVID-19 Canada2](/COVID-19---Canada/src/COVID_Canada.md)
+#<img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
 

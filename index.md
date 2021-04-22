@@ -7,7 +7,7 @@
 ---
 
 [COVID-19 Canada](/COVID_Canada.md)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="COVID_Canada_files/figure-gfm/daily cases graph-1.png?raw=true"/>
 
 ---
 

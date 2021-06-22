@@ -49,6 +49,10 @@ This data was extracted from the 1994 Census bureau database by Ronny Kohavi and
 <br>
 <br>
 
+---
+layout: single
+classes:wide
+---
 
 ### Continuous Attributes
 

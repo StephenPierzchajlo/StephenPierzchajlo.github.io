@@ -16,6 +16,8 @@
 ---
 
 [Adult Income](/AdultIncome.md)
+
+author_profile: false
 ---
 
 

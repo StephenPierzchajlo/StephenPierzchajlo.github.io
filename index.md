@@ -15,7 +15,7 @@
 
 ---
 
-[Predicting Adult Income From Census Data](/AdultIncome.md)
+[Predicting Adult Income From Census Data](https://github.com/StephenPierzchajlo/Adult-Income/blob/master/md/AdultIncome.md)
 
 ---
 

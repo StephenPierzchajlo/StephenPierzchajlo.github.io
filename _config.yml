@@ -9,11 +9,6 @@ description: > # your text below (remove <br> elements if you don't need line br
   
 theme: jekyll-theme-minimal
 
-article.page {
-    float: left;
-    width: 100%;
-}
+layout: single
 
-author_profile: false
-     
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here

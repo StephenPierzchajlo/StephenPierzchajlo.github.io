@@ -15,7 +15,7 @@
 
 ---
 
-[Adult Income](/AdultIncome.md)
+[Adult Income](/AdultIncome-checkpoint.ipynb)
 ---
 
 

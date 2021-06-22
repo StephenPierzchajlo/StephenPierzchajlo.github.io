@@ -14,12 +14,6 @@ article.page {
     width: 100%;
 }
 
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      author_profile: false
+author_profile: false
      
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here

@@ -9,6 +9,12 @@ description: > # your text below (remove <br> elements if you don't need line br
   
 theme: jekyll-theme-minimal
 
-author_profile: false
-
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author_profile: true
+     
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here

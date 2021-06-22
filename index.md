@@ -6,7 +6,7 @@
 
 ---
 
-[COVID-19 Visualizations](/COVID_Canada.md)
+[COVID-19 Visualizations](https://github.com/StephenPierzchajlo/COVID-19---Canada/blob/main/src/COVID_Canada.md)
 <img src="COVID_Canada_files/figure-gfm/daily cases graph-1.png?raw=true"/>
 
 ---

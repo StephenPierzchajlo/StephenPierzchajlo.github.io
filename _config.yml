@@ -7,7 +7,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   <br><br>
   <a href="https://www.linkedin.com/in/stephen-pierzchajlo-326302176/">View My LinkedIn Profile</a> 
   
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
 
 author_profile: false
 

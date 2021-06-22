@@ -9,6 +9,11 @@ description: > # your text below (remove <br> elements if you don't need line br
   
 theme: jekyll-theme-minimal
 
+article.page {
+    float: left;
+    width: 100%;
+}
+
 defaults:
   # _posts
   - scope:

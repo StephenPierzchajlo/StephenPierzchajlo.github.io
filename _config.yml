@@ -20,6 +20,6 @@ defaults:
       path: ""
       type: posts
     values:
-      author_profile: true
+      author_profile: false
      
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here

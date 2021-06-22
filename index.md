@@ -15,7 +15,7 @@
 
 ---
 
-[Adult Income](/AdultIncome (4).html)
+[Adult Income](/AdultIncome.md)
 ---
 
 

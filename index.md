@@ -6,7 +6,8 @@
 
 ---
 
-[COVID-19 Visualizations](https://github.com/StephenPierzchajlo/COVID-19---Canada/blob/main/src/COVID_Canada.md)
+[COVID-19 Analysis](https://github.com/StephenPierzchajlo/COVID-19---Canada/blob/main/src/COVID_Canada.md)
+Predictive modelling, visualization, and building your own COVID-19 tracker with user made functions.
 
 [Example Graph](https://github.com/StephenPierzchajlo/Majid-Commentary/blob/master/Majid_Graph.md)
 

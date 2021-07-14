@@ -7,6 +7,7 @@
 ---
 
 [COVID-19 Visualizations](https://github.com/StephenPierzchajlo/COVID-19---Canada/blob/main/src/COVID_Canada.md)
+
 [Example Graph](https://github.com/StephenPierzchajlo/Majid-Commentary/blob/master/Majid_Graph.md)
 
 ---

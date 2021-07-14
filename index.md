@@ -10,9 +10,7 @@
 
 <br>
 
-[Example Graph](https://github.com/StephenPierzchajlo/Majid-Commentary/blob/master/Majid_Graph.md)
-
-Example graph I made for a commentary in a scientific journal.
+[Example Graph](https://github.com/StephenPierzchajlo/Majid-Commentary/blob/master/Majid_Graph.md): Example graph I made for a commentary in a scientific journal.
 
 ---
 

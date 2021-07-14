@@ -10,6 +10,7 @@
 
 Predictive modelling, visualization, and building your own COVID-19 tracker with user made functions.
 
+
 [Example Graph](https://github.com/StephenPierzchajlo/Majid-Commentary/blob/master/Majid_Graph.md)
 
 ---

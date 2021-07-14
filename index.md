@@ -18,9 +18,7 @@
 
 ---
 
-[Predicting Adult Income](https://github.com/StephenPierzchajlo/Adult-Income/blob/master/src/AdultIncome.ipynb)
-
-Classifying people by income using US Census data. This is a full machine learning project.
+[Predicting Adult Income](https://github.com/StephenPierzchajlo/Adult-Income/blob/master/src/AdultIncome.ipynb): Classifying people by income using US Census data. This is a full machine learning project.
 
 ---
 

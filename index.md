@@ -8,11 +8,13 @@
 
 [COVID-19 Analysis](https://github.com/StephenPierzchajlo/COVID-19---Canada/blob/main/src/COVID_Canada.md)
 
-Predictive modelling, visualization, and building your own COVID-19 tracker with user made functions.
+Predictive modelling, multiple visualizations, and building my own COVID-19 tracker with user made functions.
 
 <br>
 
 [Example Graph](https://github.com/StephenPierzchajlo/Majid-Commentary/blob/master/Majid_Graph.md)
+
+Example graph I made for a commentary in a scientific journal.
 
 ---
 
@@ -20,7 +22,9 @@ Predictive modelling, visualization, and building your own COVID-19 tracker with
 
 ---
 
-[Predicting Adult Income (Classification)](https://github.com/StephenPierzchajlo/Adult-Income/blob/master/src/AdultIncome.ipynb)
+[Predicting Adult Income](https://github.com/StephenPierzchajlo/Adult-Income/blob/master/src/AdultIncome.ipynb)
+
+Classifying people by income using US Census data. This is a full machine learning project.
 
 ---
 

@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Stephen Pierzchajlo">
+
+<title>willemsleegers.com - April 4 Homework</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/favicon.ico" rel="icon">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/viz-1.8.2/viz.js"></script>
+<link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+<script src="site_libs/grViz-binding-1.0.11/grViz.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">willemsleegers.com</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="dropdown-header">
+ <span class="menu-text">content/about.qmd</span></li>
+  <li class="dropdown-header">
+ <span class="menu-text">content/projects.qmd</span></li>
+  <li class="dropdown-header">
+ <span class="menu-text">content/blog.qmd</span></li>
+  <li class="nav-item">
+    <a class="nav-link" href="./content/cv/cv.qmd" rel="" target="">
+ <span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.twitter.com/willemsleegers" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.github.com/willemsleegers" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">April 4 Homework</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Stephen Pierzchajlo </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="load-libraries" class="level1">
+<h1>Load Libraries</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(bayesrules)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rstanarm)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom.mixed) </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rethinking)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggpubr)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DiagrammeR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="exercise-15.3-hierarchical-data" class="level1">
+<h1>Exercise 15.3 (Hierarchical data):</h1>
+<p>The sleepstudy data is hierarchical. Draw a diagram in the spirit of Figure 15.8 that captures the hierarchical framework. Think: What are the “groups?”</p>
+<p>I am using the grVis function from the DiagrammeR package.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>DiagrammeR<span class="sc">::</span><span class="fu">grViz</span>(<span class="st">"digraph {</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 0' -&gt; 'rt_11'</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="st">'Day 0' -&gt; 'rt_21'</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 1' -&gt; 'rt_12'</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="st">'Day 1' -&gt; 'rt_22'</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 2' -&gt; 'rt_13'</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="st">'Day 2' -&gt; 'rt_23'</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 3' -&gt; 'rt_14'</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="st">'Day 3' -&gt; 'rt_24'</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 4' -&gt; 'rt_15'</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="st">'Day 4' -&gt; 'rt_25'</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 5' -&gt; 'rt_16'</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="st">'Day 5' -&gt; 'rt_26'</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 6' -&gt; 'rt_17'</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="st">'Day 6' -&gt; 'rt_27'</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 7' -&gt; 'rt_18'</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="st">'Day 7' -&gt; 'rt_28'</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 8' -&gt; 'rt_19'</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="st">'Day 8' -&gt; 'rt_29'</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 9' -&gt; 'rt_110'</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="st">'Day 9' -&gt; 'rt_210'</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="st">}"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-11f68e0c439025be708f" style="width:100%;height:216px;"></div>
+<script type="application/json" data-for="htmlwidget-11f68e0c439025be708f">{"x":{"diagram":"digraph {\nPopulation -> \"Day 0\" -> \"rt_11\"\n\"Day 0\" -> \"rt_21\"\nPopulation -> \"Day 1\" -> \"rt_12\"\n\"Day 1\" -> \"rt_22\"\nPopulation -> \"Day 2\" -> \"rt_13\"\n\"Day 2\" -> \"rt_23\"\nPopulation -> \"Day 3\" -> \"rt_14\"\n\"Day 3\" -> \"rt_24\"\nPopulation -> \"Day 4\" -> \"rt_15\"\n\"Day 4\" -> \"rt_25\"\nPopulation -> \"Day 5\" -> \"rt_16\"\n\"Day 5\" -> \"rt_26\"\nPopulation -> \"Day 6\" -> \"rt_17\"\n\"Day 6\" -> \"rt_27\"\nPopulation -> \"Day 7\" -> \"rt_18\"\n\"Day 7\" -> \"rt_28\"\nPopulation -> \"Day 8\" -> \"rt_19\"\n\"Day 8\" -> \"rt_29\"\nPopulation -> \"Day 9\" -> \"rt_110\"\n\"Day 9\" -> \"rt_210\"\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>I have made a diagram for the first two people. We draw reaction times from each person on each day. So rt_11 is participant 1 on day 0, and rt_21 is participant 2 on day 1.</p>
+</section>
+<section id="exercise-15.4-complete-pooling-part-i" class="level1">
+<h1>Exercise 15.4 (Complete pooling: Part I)</h1>
+<p>Suppose that we (incorrectly) took a complete pooling approach to modeling Reaction time (Y) by Days of sleep deprivation (X).</p>
+<section id="a" class="level2">
+<h2 class="anchored" data-anchor-id="a">a)</h2>
+<p>To explore the complete pooled behavior of the data points, construct and discuss a plot of Reaction by Days. In doing so, ignore the subjects and include the observed trend in the relationship.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(sleepstudy, <span class="fu">aes</span>(<span class="at">y =</span> Reaction, <span class="at">x =</span> Days)) <span class="sc">+</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="April4_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>This plots Day as a function of reaction time. Here we don’t account for the individual, so we are violating the assumption that each observation is independently distributed. The line I have fit should have a slope and intercept that match the OLS estimates. However, each day contains multiple observations from the same individual (thus violating independence). This also inflates my degrees of freedom. If I were calculating a p-value, it would be much lower than if I averaged each person’s reaction time per day. All of this considered, there is information about each participant we are likely missing. Their may be idiosyncrasies here that are lost because we are treating all observations as independent.</p>
+</section>
+<section id="b" class="level2">
+<h2 class="anchored" data-anchor-id="b">b)</h2>
+<p>Draw a diagram in the spirit of Figure 15.8 that captures the complete pooling framework.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>DiagrammeR<span class="sc">::</span><span class="fu">grViz</span>(<span class="st">"digraph {</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 0' -&gt; 'rt_1'</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 1' -&gt; 'rt_2'</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 2' -&gt; 'rt_3'</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 3' -&gt; 'rt_4'</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 4' -&gt; 'rt_5'</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 5' -&gt; 'rt_6'</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 6' -&gt; 'rt_7'</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 7' -&gt; 'rt_8'</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 8' -&gt; 'rt_9'</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Day 9' -&gt; 'rt_10'</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="st">}"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-d87fdb87e6aca7c15ea2" style="width:100%;height:325px;"></div>
+<script type="application/json" data-for="htmlwidget-d87fdb87e6aca7c15ea2">{"x":{"diagram":"digraph {\nPopulation -> \"Day 0\" -> \"rt_1\"\nPopulation -> \"Day 1\" -> \"rt_2\"\nPopulation -> \"Day 2\" -> \"rt_3\"\nPopulation -> \"Day 3\" -> \"rt_4\"\nPopulation -> \"Day 4\" -> \"rt_5\"\nPopulation -> \"Day 5\" -> \"rt_6\"\nPopulation -> \"Day 6\" -> \"rt_7\"\nPopulation -> \"Day 7\" -> \"rt_8\"\nPopulation -> \"Day 8\" -> \"rt_9\"\nPopulation -> \"Day 9\" -> \"rt_10\"\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>Here we don’t account for people, so each reaction time should just be clustered by day.</p>
+</section>
+<section id="c" class="level2">
+<h2 class="anchored" data-anchor-id="c">c)</h2>
+<p>Using careful notation, write out the structure for the complete pooled model of Y by X.</p>
+<p><span class="math inline">\(Y_{i} \mid \beta_{0}, \beta_{1}, \sigma \sim N (\mu_{i}, \sigma^{2})\)</span> with <span class="math inline">\(\mu_{i} = \beta_{0} + \beta_{1}X_{i}\)</span></p>
+<p>Above, the complete pooled model is saying that each Reaction Time (Yi), conditional on an intercept (B0, reaction time at Day 0), a slope (change in reaction time each day), and a common standard deviation is identically ad independently distributed. Each observation is a conditional mean (ui) such that it is distributed via a Gaussian distribution where the mean depends on the unique day.</p>
+</section>
+</section>
+<section id="exercise-15.6-no-pooling-part-i" class="level1">
+<h1>Exercise 15.6 (No pooling: Part I)</h1>
+<p>Suppose instead that we (incorrectly) took a no pooling approach in our sleep study analysis.</p>
+<section id="a-1" class="level2">
+<h2 class="anchored" data-anchor-id="a-1">a)</h2>
+<p>To explore the no pooled behavior of the data points, construct and discuss separate scatterplots of Reaction by Days for each Subject, including subject-specific trend lines.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># renumber participants so that looping is easier.</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>sleepstudy<span class="sc">$</span>numeric <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(sleepstudy<span class="sc">$</span>Subject)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># empty dataframe to store unique intercept and slope for each runner.</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>coef_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"Subject"</span> <span class="ot">=</span> <span class="st">""</span>,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"intercept"</span> <span class="ot">=</span> <span class="st">""</span>,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"Day"</span> <span class="ot">=</span> <span class="st">""</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">unique</span>(sleepstudy<span class="sc">$</span>numeric)) {</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  temp <span class="ot">&lt;-</span> <span class="fu">stan_glm</span>(</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    Reaction <span class="sc">~</span> Days, </span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> sleepstudy[sleepstudy<span class="sc">$</span>numeric <span class="sc">==</span> i,], <span class="at">family =</span> gaussian, </span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">#prior_intercept = normal(50, 2.5, autoscale = TRUE),</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">prior_aux =</span> <span class="fu">exponential</span>(<span class="dv">1</span>, <span class="at">autoscale =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">chains =</span> <span class="dv">4</span>, <span class="at">iter =</span> <span class="dv">5000</span><span class="sc">*</span><span class="dv">2</span>, <span class="at">seed =</span> <span class="dv">84735</span>, <span class="at">refresh =</span> <span class="dv">0</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  temp_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"Subject"</span> <span class="ot">=</span> i,</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"intercept"</span> <span class="ot">=</span> temp<span class="sc">$</span>coefficients[<span class="dv">1</span>],</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"Day"</span> <span class="ot">=</span> temp<span class="sc">$</span>coefficients[<span class="dv">2</span>])</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># add runner i's intercept and slope to the ith row of larger dataframe</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  coef_df <span class="ot">&lt;-</span> <span class="fu">rbind</span>(coef_df, temp_df)</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="co"># coef_df saved all columns as character. Here I resave them as factors/numeric</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>br_no_pool_coef_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"Subject"</span> <span class="ot">=</span> <span class="fu">as.factor</span>(coef_df<span class="sc">$</span>Subject),</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>                                 <span class="st">"intercept"</span> <span class="ot">=</span> <span class="fu">as.numeric</span>(coef_df<span class="sc">$</span>intercept),</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>                                 <span class="st">"Day"</span> <span class="ot">=</span> <span class="fu">as.numeric</span>(coef_df<span class="sc">$</span>Day))</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="co"># remove first row (is empty)</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>br_no_pool_coef_df <span class="ot">&lt;-</span>  br_no_pool_coef_df[<span class="sc">-</span><span class="dv">1</span>, ]</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="co"># reset rowname index to start at 1</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="fu">row.names</span>(br_no_pool_coef_df) <span class="ot">&lt;-</span> <span class="cn">NULL</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="no-pooling-graph-stan_glm" class="level3">
+<h3 class="anchored" data-anchor-id="no-pooling-graph-stan_glm">No pooling graph: stan_glm</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># empty list where each runner's graph will be saved.</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>temp_list <span class="ot">&lt;-</span> <span class="fu">list</span>()  </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># loop through runners, grab their specific intercepts/slope from previous dataframe, and save graph to list</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">unique</span>(sleepstudy<span class="sc">$</span>numeric)) {</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># runner-specific graph</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  temp_graph <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(sleepstudy[sleepstudy<span class="sc">$</span>numeric <span class="sc">==</span> i, ], <span class="fu">aes</span>(<span class="at">x =</span> Days, <span class="at">y =</span> Reaction)) <span class="sc">+</span> </span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_abline</span>(<span class="fu">aes_string</span>(<span class="at">intercept =</span> br_no_pool_coef_df[i, <span class="dv">2</span>], <span class="at">slope =</span> br_no_pool_coef_df[i, <span class="dv">3</span>]), <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="fu">paste0</span>(<span class="st">"Subject "</span>, i)) <span class="sc">+</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylim</span>(<span class="dv">190</span>, <span class="dv">470</span>)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># save ith runner graph to temp_list</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  temp_list[[i]] <span class="ot">&lt;-</span> temp_graph</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Use do.call to pass all elements of graph_list to ggarrange</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>arranged_plots <span class="ot">&lt;-</span> <span class="fu">do.call</span>(<span class="st">"ggarrange"</span>, temp_list)</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Print or display the arranged plots</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(arranged_plots)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="April4_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="3000"></p>
+</div>
+</div>
+<p>Each person has a different intercept and slope, and non of these are informed by any of the other participants. This makes it a useless model for prediction in the sense that it isn’t clear how to use any of these estimates when predicting a new participant’s reaction time.</p>
+</section>
+</section>
+<section id="b-1" class="level2">
+<h2 class="anchored" data-anchor-id="b-1">b)</h2>
+<p>Draw a diagram in the spirit of Figure 15.6 that captures the no pooling framework.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>DiagrammeR<span class="sc">::</span><span class="fu">grViz</span>(<span class="st">"digraph {</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Participant 1' -&gt; 'Day 01' -&gt; 'rt_01'</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="st">'Participant 1' -&gt; 'Day 11' -&gt; 'rt_11'</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="st">Population -&gt; 'Participant 2' -&gt; 'Day 02' -&gt; 'rt_02'</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="st">'Participant 2' -&gt; 'Day 12' -&gt; 'rt_12'</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="st">}"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-de772f470091883402cf" style="width:100%;height:216px;"></div>
+<script type="application/json" data-for="htmlwidget-de772f470091883402cf">{"x":{"diagram":"digraph {\nPopulation -> \"Participant 1\" -> \"Day 01\" -> \"rt_01\"\n\"Participant 1\" -> \"Day 11\" -> \"rt_11\"\nPopulation -> \"Participant 2\" -> \"Day 02\" -> \"rt_02\"\n\"Participant 2\" -> \"Day 12\" -> \"rt_12\"\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>I wasn’t sure if there was a single right way to do this. Basically, each participant has a reaction time for each day. I have shown the first two days for the first 2 participants. Everything is separate, meaning all coefficients will be estimated seperately.</p>
+</section>
+<section id="c-1" class="level2">
+<h2 class="anchored" data-anchor-id="c-1">c)</h2>
+<p>Using careful notation, write out the structure for the no pooled model of Y by X.</p>
+<p><span class="math inline">\(Y_{i} \mid \beta_{0i}, \beta_{1i}, \sigma_{i} \sim N (\mu_{i}, \sigma_{i}^{2})\)</span> with <span class="math inline">\(\mu_{i} = \beta_{0i} + \beta_{1i}X_{i}\)</span></p>
+<p>I believe this is right. Each person will have their own coefficient estimates, so the model must index the beta coefficients as well. I wasn’t sure about the standard deviation, but I decided to index it too given each participant will have a different spread of their reaction times. But if that is wrong, then I would update the equation so it does not index the sigma.</p>
+</section>
+</section>
+<section id="exercise-15.8-complete-vs-no-vs-partial-pooling" class="level1">
+<h1>Exercise 15.8 (Complete vs no vs partial pooling)</h1>
+<p>Suppose we only had data on the two subjects below. For both, provide a loose sketch of three separate trend lines corresponding to a complete pooled, no pooled, and partial pooled model of Reaction time by Days.</p>
+<p>First, I fit models for all three scenarios.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Complete pooled</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>m.<span class="fl">15.8</span>_completepool <span class="ot">&lt;-</span> <span class="fu">stan_glm</span>(Reaction <span class="sc">~</span> Days, </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>                                <span class="at">data =</span> sleepstudy, <span class="at">family =</span> gaussian,</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>                                <span class="at">prior_aux =</span> <span class="fu">exponential</span>(<span class="dv">1</span>, <span class="at">autoscale =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>                                <span class="at">chains =</span> <span class="dv">4</span>, <span class="at">iter =</span> <span class="dv">5000</span><span class="sc">*</span><span class="dv">2</span>, <span class="at">seed =</span> <span class="dv">84735</span>, <span class="at">refresh =</span> <span class="dv">0</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co">#tidy(m.15.8_completepool, conf.int = TRUE, conf.level = 0.80)</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co"># No pool participant 308</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>no_pool_308 <span class="ot">&lt;-</span> <span class="fu">stan_glm</span>(Reaction <span class="sc">~</span> Days, </span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>                                <span class="at">data =</span> sleepstudy[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span>, ], <span class="at">family =</span> gaussian, </span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>                                <span class="at">prior_aux =</span> <span class="fu">exponential</span>(<span class="dv">1</span>, <span class="at">autoscale =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>                                <span class="at">chains =</span> <span class="dv">4</span>, <span class="at">iter =</span> <span class="dv">5000</span><span class="sc">*</span><span class="dv">2</span>, <span class="at">seed =</span> <span class="dv">84735</span>, <span class="at">refresh =</span> <span class="dv">0</span>)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="co"># No pool participant 335</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>no_pool_335 <span class="ot">&lt;-</span> <span class="fu">stan_glm</span>(Reaction <span class="sc">~</span> Days, </span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>                                <span class="at">data =</span> sleepstudy[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>, ], <span class="at">family =</span> gaussian, </span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>                                <span class="at">prior_aux =</span> <span class="fu">exponential</span>(<span class="dv">1</span>, <span class="at">autoscale =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>                                <span class="at">chains =</span> <span class="dv">4</span>, <span class="at">iter =</span> <span class="dv">5000</span><span class="sc">*</span><span class="dv">2</span>, <span class="at">seed =</span> <span class="dv">84735</span>, <span class="at">refresh =</span> <span class="dv">0</span>)</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="co"># partial pooling</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>m.<span class="fl">15.8</span>_partial_pool <span class="ot">&lt;-</span> <span class="fu">stan_glmer</span>(Reaction <span class="sc">~</span> Days <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> Subject), </span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>                                <span class="at">data =</span> sleepstudy, <span class="at">family =</span> gaussian, </span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>                                <span class="at">prior_aux =</span> <span class="fu">exponential</span>(<span class="dv">1</span>, <span class="at">autoscale =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>                                <span class="at">chains =</span> <span class="dv">4</span>, <span class="at">iter =</span> <span class="dv">5000</span><span class="sc">*</span><span class="dv">2</span>, <span class="at">seed =</span> <span class="dv">84735</span>, <span class="at">refresh =</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="complete-pooled-trendline" class="level2">
+<h2 class="anchored" data-anchor-id="complete-pooled-trendline">Complete-pooled Trendline</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># complete pool</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggarrange</span>(</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(sleepstudy[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span>, ], <span class="fu">aes</span>(<span class="at">x =</span> Days, <span class="at">y =</span> Reaction)) <span class="sc">+</span> </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">"Subject 308"</span>) <span class="sc">+</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylim</span>(<span class="fu">min</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>]), <span class="fu">max</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>])) <span class="sc">+</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_abline</span>(<span class="fu">aes</span>(<span class="at">intercept =</span> m.<span class="fl">15.8</span>_completepool<span class="sc">$</span>coefficients[<span class="dv">1</span>], <span class="at">slope =</span> m.<span class="fl">15.8</span>_completepool<span class="sc">$</span>coefficients[<span class="dv">2</span>]), <span class="at">color =</span> <span class="st">"blue"</span>),</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(sleepstudy[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>, ], <span class="fu">aes</span>(<span class="at">x =</span> Days, <span class="at">y =</span> Reaction)) <span class="sc">+</span> </span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">"Subject 335"</span>) <span class="sc">+</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylim</span>(<span class="fu">min</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>]), <span class="fu">max</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>])) <span class="sc">+</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_abline</span>(<span class="fu">aes</span>(<span class="at">intercept =</span> m.<span class="fl">15.8</span>_completepool<span class="sc">$</span>coefficients[<span class="dv">1</span>], <span class="at">slope =</span> m.<span class="fl">15.8</span>_completepool<span class="sc">$</span>coefficients[<span class="dv">2</span>]), <span class="at">color =</span> <span class="st">"blue"</span>),</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(sleepstudy[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>, ], <span class="fu">aes</span>(<span class="at">x =</span> Days, <span class="at">y =</span> Reaction)) <span class="sc">+</span> </span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">"Both Subjects"</span>) <span class="sc">+</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylim</span>(<span class="fu">min</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>]), <span class="fu">max</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>])) <span class="sc">+</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_abline</span>(<span class="fu">aes</span>(<span class="at">intercept =</span> m.<span class="fl">15.8</span>_completepool<span class="sc">$</span>coefficients[<span class="dv">1</span>], <span class="at">slope =</span> m.<span class="fl">15.8</span>_completepool<span class="sc">$</span>coefficients[<span class="dv">2</span>]), <span class="at">color =</span> <span class="st">"blue"</span>),</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">ncol =</span> <span class="dv">3</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="April4_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="2400"></p>
+</div>
+</div>
+<p>When we completely pool the data, then the trend line goes exactly through the middle of the pooled data (right graph). However, if we put this trend line through participant 308 and participant 335 individually, the trend line doesn’t fit very well. For participant 335, it is even in the wrong direction.</p>
+</section>
+<section id="no-pooled-trendline" class="level2">
+<h2 class="anchored" data-anchor-id="no-pooled-trendline">No-pooled Trendline</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># complete pool</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggarrange</span>(</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(sleepstudy[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span>, ], <span class="fu">aes</span>(<span class="at">x =</span> Days, <span class="at">y =</span> Reaction)) <span class="sc">+</span> </span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">"Subject 308"</span>) <span class="sc">+</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylim</span>(<span class="fu">min</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>]), <span class="fu">max</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>])) <span class="sc">+</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_abline</span>(<span class="fu">aes</span>(<span class="at">intercept =</span> no_pool_308<span class="sc">$</span>coefficients[<span class="dv">1</span>], <span class="at">slope =</span> no_pool_308<span class="sc">$</span>coefficients[<span class="dv">2</span>]), <span class="at">color =</span> <span class="st">"blue"</span>),</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(sleepstudy[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>, ], <span class="fu">aes</span>(<span class="at">x =</span> Days, <span class="at">y =</span> Reaction)) <span class="sc">+</span> </span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">"Subject 335"</span>) <span class="sc">+</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylim</span>(<span class="fu">min</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>]), <span class="fu">max</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>])) <span class="sc">+</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_abline</span>(<span class="fu">aes</span>(<span class="at">intercept =</span> no_pool_335<span class="sc">$</span>coefficients[<span class="dv">1</span>], <span class="at">slope =</span> no_pool_335<span class="sc">$</span>coefficients[<span class="dv">2</span>]), <span class="at">color =</span> <span class="st">"red"</span>),</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(sleepstudy[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>, ], <span class="fu">aes</span>(<span class="at">x =</span> Days, <span class="at">y =</span> Reaction)) <span class="sc">+</span> </span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">"Both Subjects"</span>) <span class="sc">+</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylim</span>(<span class="fu">min</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>]), <span class="fu">max</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>])) <span class="sc">+</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_abline</span>(<span class="fu">aes</span>(<span class="at">intercept =</span> no_pool_308<span class="sc">$</span>coefficients[<span class="dv">1</span>], <span class="at">slope =</span> no_pool_308<span class="sc">$</span>coefficients[<span class="dv">2</span>]), <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_abline</span>(<span class="fu">aes</span>(<span class="at">intercept =</span> no_pool_335<span class="sc">$</span>coefficients[<span class="dv">1</span>], <span class="at">slope =</span> no_pool_335<span class="sc">$</span>coefficients[<span class="dv">2</span>]), <span class="at">color =</span> <span class="st">"red"</span>),</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">ncol =</span> <span class="dv">3</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="April4_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="2400"></p>
+</div>
+</div>
+<p>Now we have a really well fitting trend line for each individual participant. However, when we look at the pooled data (right graph) we don’t have any group level estimate, making prediction of new data impossible.</p>
+</section>
+<section id="partial-pooled-trendline" class="level2">
+<h2 class="anchored" data-anchor-id="partial-pooled-trendline">Partial-pooled Trendline</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggarrange</span>(</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(sleepstudy[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span>, ], <span class="fu">aes</span>(<span class="at">x =</span> Days, <span class="at">y =</span> Reaction)) <span class="sc">+</span> </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">"Subject 308"</span>) <span class="sc">+</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylim</span>(<span class="dv">200</span>, <span class="fu">max</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>])) <span class="sc">+</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_abline</span>(<span class="fu">aes</span>(<span class="at">intercept =</span> m.<span class="fl">15.8</span>_partial_pool<span class="sc">$</span>coefficients[<span class="dv">1</span>] <span class="sc">+</span> <span class="fu">ranef</span>(m.<span class="fl">15.8</span>_partial_pool)<span class="sc">$</span>Subject[<span class="dv">1</span>,<span class="dv">1</span>], <span class="at">slope =</span> m.<span class="fl">15.8</span>_partial_pool<span class="sc">$</span>coefficients[<span class="dv">2</span>]), <span class="at">color =</span> <span class="st">"blue"</span>),</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(sleepstudy[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>, ], <span class="fu">aes</span>(<span class="at">x =</span> Days, <span class="at">y =</span> Reaction)) <span class="sc">+</span> </span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">"Subject 335"</span>) <span class="sc">+</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylim</span>(<span class="dv">200</span>, <span class="fu">max</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>])) <span class="sc">+</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_abline</span>(<span class="fu">aes</span>(<span class="at">intercept =</span> m.<span class="fl">15.8</span>_partial_pool<span class="sc">$</span>coefficients[<span class="dv">1</span>] <span class="sc">+</span> <span class="fu">ranef</span>(m.<span class="fl">15.8</span>_partial_pool)<span class="sc">$</span>Subject[<span class="dv">2</span>,<span class="dv">1</span>], <span class="at">slope =</span> m.<span class="fl">15.8</span>_partial_pool<span class="sc">$</span>coefficients[<span class="dv">2</span>]), <span class="at">color =</span> <span class="st">"blue"</span>),</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(sleepstudy[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>, ], <span class="fu">aes</span>(<span class="at">x =</span> Days, <span class="at">y =</span> Reaction)) <span class="sc">+</span> </span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">"Both Subjects"</span>) <span class="sc">+</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylim</span>(<span class="dv">200</span>, <span class="fu">max</span>(sleepstudy<span class="sc">$</span>Reaction[sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">308</span> <span class="sc">|</span> sleepstudy<span class="sc">$</span>Subject <span class="sc">==</span> <span class="dv">335</span>])) <span class="sc">+</span></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_abline</span>(<span class="fu">aes</span>(<span class="at">intercept =</span> m.<span class="fl">15.8</span>_partial_pool<span class="sc">$</span>coefficients[<span class="dv">1</span>], <span class="at">slope =</span> m.<span class="fl">15.8</span>_partial_pool<span class="sc">$</span>coefficients[<span class="dv">2</span>]), <span class="at">color =</span> <span class="st">"blue"</span>),</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">ncol =</span> <span class="dv">3</span></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="April4_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="2400"></p>
+</div>
+</div>
+<p>All three panels have different intercepts. The slopes are all the same as this is an intercept only model. But now, we can use the trendline on the right graph to make predictions about new data, and we have also accounted for individual differences (first two panels).</p>
+</section>
+</section>
+<section id="mn1" class="level1">
+<h1>MN1</h1>
+<p>Do the tadpole simulation from the book (section 13.2), but for another scenario (other true parameters of your choice), and display result as Fig. 13.1 and Fig 13.3. Briefly compare results of your simulation with McElreath’s simulation.</p>
+<p>First, I am redoing the example from the book to ensure I understand the process and to make sure I am doing it correctly.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># simulation parameters</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>a_bar <span class="ot">&lt;-</span> <span class="fl">1.5</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>sigma <span class="ot">&lt;-</span> <span class="fl">1.5</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>nponds <span class="ot">&lt;-</span> <span class="dv">60</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>Ni <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(<span class="fu">rep</span>( <span class="fu">c</span>(<span class="dv">5</span>,<span class="dv">10</span>,<span class="dv">25</span>,<span class="dv">35</span>), <span class="at">each =</span> <span class="dv">15</span>))</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co"># same seed McElreath uses. For reproducibility</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">5005</span>)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="co"># sample log odds of survival</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>a_pond <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(nponds, <span class="at">mean =</span> a_bar, <span class="at">sd =</span> sigma)</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="co"># simulation dataframe</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>dsim <span class="ot">&lt;-</span> <span class="fu">data.frame</span>( <span class="at">pond=</span><span class="dv">1</span><span class="sc">:</span>nponds , <span class="at">Ni=</span>Ni , <span class="at">true_a=</span>a_pond )</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Si = number that survived in nth tank</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>dsim<span class="sc">$</span>Si <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(nponds, <span class="at">prob =</span> <span class="fu">logistic</span>(dsim<span class="sc">$</span>true_a), <span class="at">size =</span> dsim<span class="sc">$</span>Ni)</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="co"># proportion that survived in nth tank</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>dsim<span class="sc">$</span>p_nopool <span class="ot">&lt;-</span> dsim<span class="sc">$</span>Si<span class="sc">/</span>dsim<span class="sc">$</span>Ni</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a><span class="co"># list for regression</span></span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">Si=</span>dsim<span class="sc">$</span>Si, <span class="at">Ni=</span>dsim<span class="sc">$</span>Ni, <span class="at">pond=</span>dsim<span class="sc">$</span>pond)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now I run his multilevel model.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># run McElreath's multilevel model</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>m13<span class="fl">.3</span> <span class="ot">&lt;-</span> <span class="fu">ulam</span>(<span class="fu">alist</span>(</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  Si <span class="sc">~</span> <span class="fu">dbinom</span>( Ni , p ),</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">logit</span>(p) <span class="ot">&lt;-</span> a_pond[pond],</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  a_pond[pond] <span class="sc">~</span> <span class="fu">dnorm</span>( a_bar , sigma ),</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  a_bar <span class="sc">~</span> <span class="fu">dnorm</span>( <span class="dv">0</span> , <span class="fl">1.5</span> ),</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  sigma <span class="sc">~</span> <span class="fu">dexp</span>( <span class="dv">1</span> )),</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat, <span class="at">chains =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Running MCMC with 4 sequential chains, with 1 thread(s) per chain...
+
+Chain 1 Iteration:   1 / 1000 [  0%]  (Warmup) 
+Chain 1 Iteration: 100 / 1000 [ 10%]  (Warmup) 
+Chain 1 Iteration: 200 / 1000 [ 20%]  (Warmup) 
+Chain 1 Iteration: 300 / 1000 [ 30%]  (Warmup) 
+Chain 1 Iteration: 400 / 1000 [ 40%]  (Warmup) 
+Chain 1 Iteration: 500 / 1000 [ 50%]  (Warmup) 
+Chain 1 Iteration: 501 / 1000 [ 50%]  (Sampling) 
+Chain 1 Iteration: 600 / 1000 [ 60%]  (Sampling) 
+Chain 1 Iteration: 700 / 1000 [ 70%]  (Sampling) 
+Chain 1 Iteration: 800 / 1000 [ 80%]  (Sampling) 
+Chain 1 Iteration: 900 / 1000 [ 90%]  (Sampling) 
+Chain 1 Iteration: 1000 / 1000 [100%]  (Sampling) 
+Chain 1 finished in 0.4 seconds.
+Chain 2 Iteration:   1 / 1000 [  0%]  (Warmup) 
+Chain 2 Iteration: 100 / 1000 [ 10%]  (Warmup) 
+Chain 2 Iteration: 200 / 1000 [ 20%]  (Warmup) 
+Chain 2 Iteration: 300 / 1000 [ 30%]  (Warmup) 
+Chain 2 Iteration: 400 / 1000 [ 40%]  (Warmup) 
+Chain 2 Iteration: 500 / 1000 [ 50%]  (Warmup) 
+Chain 2 Iteration: 501 / 1000 [ 50%]  (Sampling) 
+Chain 2 Iteration: 600 / 1000 [ 60%]  (Sampling) 
+Chain 2 Iteration: 700 / 1000 [ 70%]  (Sampling) 
+Chain 2 Iteration: 800 / 1000 [ 80%]  (Sampling) 
+Chain 2 Iteration: 900 / 1000 [ 90%]  (Sampling) 
+Chain 2 Iteration: 1000 / 1000 [100%]  (Sampling) 
+Chain 2 finished in 0.3 seconds.
+Chain 3 Iteration:   1 / 1000 [  0%]  (Warmup) 
+Chain 3 Iteration: 100 / 1000 [ 10%]  (Warmup) 
+Chain 3 Iteration: 200 / 1000 [ 20%]  (Warmup) 
+Chain 3 Iteration: 300 / 1000 [ 30%]  (Warmup) 
+Chain 3 Iteration: 400 / 1000 [ 40%]  (Warmup) 
+Chain 3 Iteration: 500 / 1000 [ 50%]  (Warmup) 
+Chain 3 Iteration: 501 / 1000 [ 50%]  (Sampling) 
+Chain 3 Iteration: 600 / 1000 [ 60%]  (Sampling) 
+Chain 3 Iteration: 700 / 1000 [ 70%]  (Sampling) 
+Chain 3 Iteration: 800 / 1000 [ 80%]  (Sampling) 
+Chain 3 Iteration: 900 / 1000 [ 90%]  (Sampling) 
+Chain 3 Iteration: 1000 / 1000 [100%]  (Sampling) 
+Chain 3 finished in 0.3 seconds.
+Chain 4 Iteration:   1 / 1000 [  0%]  (Warmup) 
+Chain 4 Iteration: 100 / 1000 [ 10%]  (Warmup) 
+Chain 4 Iteration: 200 / 1000 [ 20%]  (Warmup) 
+Chain 4 Iteration: 300 / 1000 [ 30%]  (Warmup) 
+Chain 4 Iteration: 400 / 1000 [ 40%]  (Warmup) 
+Chain 4 Iteration: 500 / 1000 [ 50%]  (Warmup) 
+Chain 4 Iteration: 501 / 1000 [ 50%]  (Sampling) 
+Chain 4 Iteration: 600 / 1000 [ 60%]  (Sampling) 
+Chain 4 Iteration: 700 / 1000 [ 70%]  (Sampling) 
+Chain 4 Iteration: 800 / 1000 [ 80%]  (Sampling) 
+Chain 4 Iteration: 900 / 1000 [ 90%]  (Sampling) 
+Chain 4 Iteration: 1000 / 1000 [100%]  (Sampling) 
+Chain 4 finished in 0.3 seconds.
+
+All 4 chains finished successfully.
+Mean chain execution time: 0.3 seconds.
+Total execution time: 2.4 seconds.</code></pre>
+</div>
+</div>
+<p>Now I calculate various things for plotting</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Smaple posterior for each pond. Each column is a pond, each row is a sample from that pond's posterior</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>post <span class="ot">&lt;-</span> <span class="fu">extract.samples</span>(m13<span class="fl">.3</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>dsim<span class="sc">$</span>propsurv.est <span class="ot">&lt;-</span> <span class="fu">logistic</span>( <span class="fu">apply</span>( post<span class="sc">$</span>a_pond , <span class="dv">2</span> , mean ) )</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># mean posterior probability of survival in each tank</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>dsim<span class="sc">$</span>p_partpool <span class="ot">&lt;-</span> <span class="fu">apply</span>(<span class="fu">inv_logit</span>(post<span class="sc">$</span>a_pond), <span class="dv">2</span>, mean)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co"># true proportion of survival in each tank</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>dsim<span class="sc">$</span>p_true <span class="ot">&lt;-</span> <span class="fu">inv_logit</span>(dsim<span class="sc">$</span>true_a)</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># difference between no pooling estimates and true survival rate in each tank</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>nopool_error <span class="ot">&lt;-</span> <span class="fu">abs</span>(dsim<span class="sc">$</span>p_nopool <span class="sc">-</span> dsim<span class="sc">$</span>p_true)</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="co"># difference between partial pooling estimates and true survival rate in each tank</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>partpool_error <span class="ot">&lt;-</span> <span class="fu">abs</span>( dsim<span class="sc">$</span>p_partpool <span class="sc">-</span> dsim<span class="sc">$</span>p_true )</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="co"># average no pooling survival per tank group</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>nopool_avg <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(nopool_error,<span class="fu">list</span>(dsim<span class="sc">$</span>Ni),mean)</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a><span class="co"># average partial pooling survival per group</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>partpool_avg <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(partpool_error,<span class="fu">list</span>(dsim<span class="sc">$</span>Ni),mean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Note: blue = no pool black = partial pool Now, I plot the error of each tank’s estimates (partial pooling average distance from true survival and no pooling average distance from true survival)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># average partial pooling survival per group</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>partpool_avg <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(partpool_error,<span class="fu">list</span>(dsim<span class="sc">$</span>Ni),mean)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">60</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>), dsim<span class="sc">$</span>p_true, <span class="at">xlab=</span><span class="st">"pond"</span>, <span class="at">ylab=</span><span class="st">"proportion survival"</span>, <span class="at">col =</span> rangi2, <span class="at">pch =</span> <span class="dv">16</span>)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">60</span> , dsim<span class="sc">$</span>propsurv.est)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="co"># mark posterior mean probability across tanks</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>( <span class="at">h=</span><span class="fu">mean</span>(<span class="fu">inv_logit</span>(post<span class="sc">$</span>a_bar)) , <span class="at">lty=</span><span class="dv">2</span> )</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fl">15.5</span> , <span class="at">lwd =</span> <span class="fl">0.5</span>)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fl">30.5</span> , <span class="at">lwd =</span> <span class="fl">0.5</span>)</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fl">45.5</span> , <span class="at">lwd =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="April4_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># average partial pooling survival per group</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">60</span>, nopool_error, <span class="at">xlab=</span><span class="st">"pond"</span>, <span class="at">ylab=</span><span class="st">"absolute error"</span>, <span class="at">col =</span> rangi2, <span class="at">pch =</span> <span class="dv">16</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">60</span> , partpool_error)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fl">15.5</span> , <span class="at">lwd =</span> <span class="fl">0.5</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fl">30.5</span> , <span class="at">lwd =</span> <span class="fl">0.5</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fl">45.5</span> , <span class="at">lwd =</span> <span class="fl">0.5</span>)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="sc">-</span><span class="dv">2</span>, <span class="at">x1 =</span> <span class="dv">15</span>, <span class="at">y0 =</span> nopool_avg[<span class="dv">1</span>,<span class="dv">2</span>], <span class="at">y1 =</span> nopool_avg[<span class="dv">1</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> rangi2)</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="sc">-</span><span class="dv">2</span>, <span class="at">x1 =</span> <span class="dv">15</span>, <span class="at">y0 =</span> partpool_avg[<span class="dv">1</span>,<span class="dv">2</span>], <span class="at">y1 =</span> partpool_avg[<span class="dv">1</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> <span class="st">"black"</span>)</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="dv">15</span>, <span class="at">x1 =</span> <span class="dv">30</span>, <span class="at">y0 =</span> nopool_avg[<span class="dv">2</span>,<span class="dv">2</span>], <span class="at">y1 =</span> nopool_avg[<span class="dv">2</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> rangi2)</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="dv">15</span>, <span class="at">x1 =</span> <span class="dv">30</span>, <span class="at">y0 =</span> partpool_avg[<span class="dv">2</span>,<span class="dv">2</span>], <span class="at">y1 =</span> partpool_avg[<span class="dv">2</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> <span class="st">"black"</span>)</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="dv">30</span>, <span class="at">x1 =</span> <span class="dv">45</span>, <span class="at">y0 =</span> nopool_avg[<span class="dv">3</span>,<span class="dv">2</span>], <span class="at">y1 =</span> nopool_avg[<span class="dv">3</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> rangi2)</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="dv">30</span>, <span class="at">x1 =</span> <span class="dv">45</span> ,<span class="at">y0 =</span> partpool_avg[<span class="dv">3</span>,<span class="dv">2</span>], <span class="at">y1 =</span> partpool_avg[<span class="dv">3</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> <span class="st">"black"</span>)</span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="dv">45</span> ,<span class="at">x1 =</span> <span class="dv">60</span>, <span class="at">y0 =</span> nopool_avg[<span class="dv">4</span>,<span class="dv">2</span>], <span class="at">y1 =</span> nopool_avg[<span class="dv">4</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> rangi2)</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="dv">45</span> ,<span class="at">x1 =</span> <span class="dv">60</span>, <span class="at">y0 =</span> partpool_avg[<span class="dv">4</span>,<span class="dv">2</span>], <span class="at">y1 =</span> partpool_avg[<span class="dv">4</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> <span class="st">"black"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="April4_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>No pooling in blue, partial pooling in black. There is more absolute error in no pooling in the smaller ponds.</p>
+<p>Now, I will try with high survival and low variance</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># simulation parameters</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>a_bar <span class="ot">&lt;-</span> <span class="dv">4</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>sigma <span class="ot">&lt;-</span> .<span class="dv">5</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>nponds <span class="ot">&lt;-</span> <span class="dv">60</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>Ni <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(<span class="fu">rep</span>( <span class="fu">c</span>(<span class="dv">5</span>,<span class="dv">10</span>,<span class="dv">25</span>,<span class="dv">35</span>), <span class="at">each =</span> <span class="dv">15</span>))</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="co"># same seed McElreath uses. For reproducibility</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1234</span>)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="co"># sample log odds of survival</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>a_pond <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(nponds, <span class="at">mean =</span> a_bar, <span class="at">sd =</span> sigma)</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a><span class="co"># simulation dataframe</span></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>dsim <span class="ot">&lt;-</span> <span class="fu">data.frame</span>( <span class="at">pond=</span><span class="dv">1</span><span class="sc">:</span>nponds , <span class="at">Ni=</span>Ni , <span class="at">true_a=</span>a_pond )</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Si = number that survived in nth tank</span></span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>dsim<span class="sc">$</span>Si <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(nponds, <span class="at">prob =</span> <span class="fu">logistic</span>(dsim<span class="sc">$</span>true_a), <span class="at">size =</span> dsim<span class="sc">$</span>Ni)</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a><span class="co"># proportion that survived in nth tank</span></span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>dsim<span class="sc">$</span>p_nopool <span class="ot">&lt;-</span> dsim<span class="sc">$</span>Si<span class="sc">/</span>dsim<span class="sc">$</span>Ni</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a><span class="co"># list for regression</span></span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">Si=</span>dsim<span class="sc">$</span>Si, <span class="at">Ni=</span>dsim<span class="sc">$</span>Ni, <span class="at">pond=</span>dsim<span class="sc">$</span>pond)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now I run his multilevel model.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># run McElreath's multilevel model</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>high_surviv_low_variance <span class="ot">&lt;-</span> <span class="fu">ulam</span>(<span class="fu">alist</span>(</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  Si <span class="sc">~</span> <span class="fu">dbinom</span>( Ni , p ),</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">logit</span>(p) <span class="ot">&lt;-</span> a_pond[pond],</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  a_pond[pond] <span class="sc">~</span> <span class="fu">dnorm</span>( a_bar , sigma ),</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>  a_bar <span class="sc">~</span> <span class="fu">dnorm</span>( <span class="dv">0</span> , <span class="fl">1.5</span> ),</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>  sigma <span class="sc">~</span> <span class="fu">dexp</span>( <span class="dv">1</span> )),</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat, <span class="at">chains =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Running MCMC with 4 sequential chains, with 1 thread(s) per chain...
+
+Chain 1 Iteration:   1 / 1000 [  0%]  (Warmup) 
+Chain 1 Iteration: 100 / 1000 [ 10%]  (Warmup) 
+Chain 1 Iteration: 200 / 1000 [ 20%]  (Warmup) 
+Chain 1 Iteration: 300 / 1000 [ 30%]  (Warmup) 
+Chain 1 Iteration: 400 / 1000 [ 40%]  (Warmup) 
+Chain 1 Iteration: 500 / 1000 [ 50%]  (Warmup) 
+Chain 1 Iteration: 501 / 1000 [ 50%]  (Sampling) 
+Chain 1 Iteration: 600 / 1000 [ 60%]  (Sampling) 
+Chain 1 Iteration: 700 / 1000 [ 70%]  (Sampling) 
+Chain 1 Iteration: 800 / 1000 [ 80%]  (Sampling) 
+Chain 1 Iteration: 900 / 1000 [ 90%]  (Sampling) 
+Chain 1 Iteration: 1000 / 1000 [100%]  (Sampling) 
+Chain 1 finished in 0.3 seconds.
+Chain 2 Iteration:   1 / 1000 [  0%]  (Warmup) 
+Chain 2 Iteration: 100 / 1000 [ 10%]  (Warmup) 
+Chain 2 Iteration: 200 / 1000 [ 20%]  (Warmup) 
+Chain 2 Iteration: 300 / 1000 [ 30%]  (Warmup) 
+Chain 2 Iteration: 400 / 1000 [ 40%]  (Warmup) 
+Chain 2 Iteration: 500 / 1000 [ 50%]  (Warmup) 
+Chain 2 Iteration: 501 / 1000 [ 50%]  (Sampling) 
+Chain 2 Iteration: 600 / 1000 [ 60%]  (Sampling) 
+Chain 2 Iteration: 700 / 1000 [ 70%]  (Sampling) 
+Chain 2 Iteration: 800 / 1000 [ 80%]  (Sampling) 
+Chain 2 Iteration: 900 / 1000 [ 90%]  (Sampling) 
+Chain 2 Iteration: 1000 / 1000 [100%]  (Sampling) 
+Chain 2 finished in 0.4 seconds.
+Chain 3 Iteration:   1 / 1000 [  0%]  (Warmup) 
+Chain 3 Iteration: 100 / 1000 [ 10%]  (Warmup) 
+Chain 3 Iteration: 200 / 1000 [ 20%]  (Warmup) 
+Chain 3 Iteration: 300 / 1000 [ 30%]  (Warmup) 
+Chain 3 Iteration: 400 / 1000 [ 40%]  (Warmup) 
+Chain 3 Iteration: 500 / 1000 [ 50%]  (Warmup) 
+Chain 3 Iteration: 501 / 1000 [ 50%]  (Sampling) 
+Chain 3 Iteration: 600 / 1000 [ 60%]  (Sampling) 
+Chain 3 Iteration: 700 / 1000 [ 70%]  (Sampling) 
+Chain 3 Iteration: 800 / 1000 [ 80%]  (Sampling) 
+Chain 3 Iteration: 900 / 1000 [ 90%]  (Sampling) 
+Chain 3 Iteration: 1000 / 1000 [100%]  (Sampling) 
+Chain 3 finished in 0.3 seconds.
+Chain 4 Iteration:   1 / 1000 [  0%]  (Warmup) 
+Chain 4 Iteration: 100 / 1000 [ 10%]  (Warmup) 
+Chain 4 Iteration: 200 / 1000 [ 20%]  (Warmup) 
+Chain 4 Iteration: 300 / 1000 [ 30%]  (Warmup) 
+Chain 4 Iteration: 400 / 1000 [ 40%]  (Warmup) 
+Chain 4 Iteration: 500 / 1000 [ 50%]  (Warmup) 
+Chain 4 Iteration: 501 / 1000 [ 50%]  (Sampling) 
+Chain 4 Iteration: 600 / 1000 [ 60%]  (Sampling) 
+Chain 4 Iteration: 700 / 1000 [ 70%]  (Sampling) 
+Chain 4 Iteration: 800 / 1000 [ 80%]  (Sampling) 
+Chain 4 Iteration: 900 / 1000 [ 90%]  (Sampling) 
+Chain 4 Iteration: 1000 / 1000 [100%]  (Sampling) 
+Chain 4 finished in 0.3 seconds.
+
+All 4 chains finished successfully.
+Mean chain execution time: 0.3 seconds.
+Total execution time: 2.4 seconds.</code></pre>
+</div>
+</div>
+<p>Now I calculate various things for plotting</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Smaple posterior for each pond. Each column is a pond, each row is a sample from that pond's posterior</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>post <span class="ot">&lt;-</span> <span class="fu">extract.samples</span>(high_surviv_low_variance)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>dsim<span class="sc">$</span>propsurv.est <span class="ot">&lt;-</span> <span class="fu">logistic</span>( <span class="fu">apply</span>( post<span class="sc">$</span>a_pond , <span class="dv">2</span> , mean ) )</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="co"># mean posterior probability of survival in each tank</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>dsim<span class="sc">$</span>p_partpool <span class="ot">&lt;-</span> <span class="fu">apply</span>(<span class="fu">inv_logit</span>(post<span class="sc">$</span>a_pond), <span class="dv">2</span>, mean)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="co"># true proportion of survival in each tank</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>dsim<span class="sc">$</span>p_true <span class="ot">&lt;-</span> <span class="fu">inv_logit</span>(dsim<span class="sc">$</span>true_a)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="co"># difference between no pooling estimates and true survival rate in each tank</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>nopool_error <span class="ot">&lt;-</span> <span class="fu">abs</span>(dsim<span class="sc">$</span>p_nopool <span class="sc">-</span> dsim<span class="sc">$</span>p_true)</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a><span class="co"># difference between partial pooling estimates and true survival rate in each tank</span></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>partpool_error <span class="ot">&lt;-</span> <span class="fu">abs</span>( dsim<span class="sc">$</span>p_partpool <span class="sc">-</span> dsim<span class="sc">$</span>p_true )</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a><span class="co"># average no pooling survival per tank group</span></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>nopool_avg <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(nopool_error,<span class="fu">list</span>(dsim<span class="sc">$</span>Ni),mean)</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a><span class="co"># average partial pooling survival per group</span></span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>partpool_avg <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(partpool_error,<span class="fu">list</span>(dsim<span class="sc">$</span>Ni),mean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Note: blue = no pool black = partial pool Now, I plot the error of each tank’s estimates (partial pooling average distance from true survival and no pooling average distance from true survival)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># average partial pooling survival per group</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>partpool_avg <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(partpool_error,<span class="fu">list</span>(dsim<span class="sc">$</span>Ni),mean)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>dsim<span class="sc">$</span>propsurv.est <span class="ot">&lt;-</span> <span class="fu">logistic</span>( <span class="fu">apply</span>( post<span class="sc">$</span>a_bar , <span class="dv">2</span> , mean ) )</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">60</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>), dsim<span class="sc">$</span>p_true, <span class="at">xlab=</span><span class="st">"pond"</span>, <span class="at">ylab=</span><span class="st">"proportion survival"</span>, <span class="at">col =</span> rangi2, <span class="at">pch =</span> <span class="dv">16</span>)</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">60</span> , dsim<span class="sc">$</span>propsurv.est)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="co"># mark posterior mean probability across tanks</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>( <span class="at">h=</span><span class="fu">mean</span>(<span class="fu">inv_logit</span>(post<span class="sc">$</span>a_bar)) , <span class="at">lty=</span><span class="dv">2</span> )</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fl">15.5</span> , <span class="at">lwd =</span> <span class="fl">0.5</span>)</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fl">30.5</span> , <span class="at">lwd =</span> <span class="fl">0.5</span>)</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fl">45.5</span> , <span class="at">lwd =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="April4_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Because we have such high survivability and such low variance, most partial pool estimates are very similar to the no pooled estimates.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">60</span>, nopool_error, <span class="at">xlab=</span><span class="st">"pond"</span>, <span class="at">ylab=</span><span class="st">"absolute error"</span>, <span class="at">col =</span> rangi2, <span class="at">pch =</span> <span class="dv">16</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">60</span> , partpool_error)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fl">15.5</span> , <span class="at">lwd =</span> <span class="fl">0.5</span>)</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fl">30.5</span> , <span class="at">lwd =</span> <span class="fl">0.5</span>)</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fl">45.5</span> , <span class="at">lwd =</span> <span class="fl">0.5</span>)</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="sc">-</span><span class="dv">2</span>, <span class="at">x1 =</span> <span class="dv">15</span>, <span class="at">y0 =</span> nopool_avg[<span class="dv">1</span>,<span class="dv">2</span>], <span class="at">y1 =</span> nopool_avg[<span class="dv">1</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> rangi2)</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="sc">-</span><span class="dv">2</span>, <span class="at">x1 =</span> <span class="dv">15</span>, <span class="at">y0 =</span> partpool_avg[<span class="dv">1</span>,<span class="dv">2</span>], <span class="at">y1 =</span> partpool_avg[<span class="dv">1</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> <span class="st">"black"</span>)</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="dv">15</span>, <span class="at">x1 =</span> <span class="dv">30</span>, <span class="at">y0 =</span> nopool_avg[<span class="dv">2</span>,<span class="dv">2</span>], <span class="at">y1 =</span> nopool_avg[<span class="dv">2</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> rangi2)</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="dv">15</span>, <span class="at">x1 =</span> <span class="dv">30</span>, <span class="at">y0 =</span> partpool_avg[<span class="dv">2</span>,<span class="dv">2</span>], <span class="at">y1 =</span> partpool_avg[<span class="dv">2</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> <span class="st">"black"</span>)</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="dv">30</span>, <span class="at">x1 =</span> <span class="dv">45</span>, <span class="at">y0 =</span> nopool_avg[<span class="dv">3</span>,<span class="dv">2</span>], <span class="at">y1 =</span> nopool_avg[<span class="dv">3</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> rangi2)</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="dv">30</span>, <span class="at">x1 =</span> <span class="dv">45</span> ,<span class="at">y0 =</span> partpool_avg[<span class="dv">3</span>,<span class="dv">2</span>], <span class="at">y1 =</span> partpool_avg[<span class="dv">3</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> <span class="st">"black"</span>)</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="dv">45</span> ,<span class="at">x1 =</span> <span class="dv">60</span>, <span class="at">y0 =</span> nopool_avg[<span class="dv">4</span>,<span class="dv">2</span>], <span class="at">y1 =</span> nopool_avg[<span class="dv">4</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> rangi2)</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> <span class="dv">45</span> ,<span class="at">x1 =</span> <span class="dv">60</span>, <span class="at">y0 =</span> partpool_avg[<span class="dv">4</span>,<span class="dv">2</span>], <span class="at">y1 =</span> partpool_avg[<span class="dv">4</span>,<span class="dv">2</span>], <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>, <span class="at">col =</span> <span class="st">"black"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="April4_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Because we have high survival and low variance, I would expect very similar results between no pooling and partial pooing. The results here show very little variance in the smaller tanks compared to McElreath’s example. The difference looks bigger, but the absolute error is smaller (it’s just the scale of this y-axis versus the previous one). This shows that when we have smaller variance, the no-pool estimates actually do an ok job.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2024 - Willem Sleegers</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

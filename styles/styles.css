@@ -1,0 +1,37 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Reduce the width of meta columns of blog post listings */
+.quarto-listing-container-default
+  .quarto-listing-default
+  .quarto-post
+  .metadata {
+  flex-basis: 10%;
+}
+
+/* Remove focus outline from code blocks */
+summary {
+  outline: none;
+}
+
+/* Add border to the bottom of the navigation bar 
+#quarto-header {
+  border-bottom: 1px solid #dee2e6;
+}
+*/
+
+/* Grid cards */
+#listing-projects .card-body {
+  padding: 0;
+}
+
+#listing-projects .quarto-grid-item .card-title {
+  padding: 1rem 1rem 0 1rem;
+}
+
+#listing-projects .quarto-grid-item .card-text {
+  padding: 1rem;
+}

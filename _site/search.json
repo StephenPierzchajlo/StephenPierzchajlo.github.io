@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Website",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "April4.html",
+    "href": "April4.html",
+    "title": "April 4 Homework",
+    "section": "",
+    "text": "# Load packages\nlibrary(bayesrules)\nlibrary(tidyverse)\nlibrary(rstanarm)\nlibrary(broom.mixed) \nlibrary(rethinking)\nlibrary(ggpubr)\nlibrary(lme4)\nlibrary(DiagrammeR)"
+  },
+  {
+    "objectID": "April4.html#a",
+    "href": "April4.html#a",
+    "title": "April 4 Homework",
+    "section": "a)",
+    "text": "a)\nTo explore the complete pooled behavior of the data points, construct and discuss a plot of Reaction by Days. In doing so, ignore the subjects and include the observed trend in the relationship.\n\nggplot(sleepstudy, aes(y = Reaction, x = Days)) + \n  geom_point() + \n  geom_smooth(method = \"lm\", se = FALSE)\n\n\n\n\nThis plots Day as a function of reaction time. Here we don’t account for the individual, so we are violating the assumption that each observation is independently distributed. The line I have fit should have a slope and intercept that match the OLS estimates. However, each day contains multiple observations from the same individual (thus violating independence). This also inflates my degrees of freedom. If I were calculating a p-value, it would be much lower than if I averaged each person’s reaction time per day. All of this considered, there is information about each participant we are likely missing. Their may be idiosyncrasies here that are lost because we are treating all observations as independent."
+  },
+  {
+    "objectID": "April4.html#b",
+    "href": "April4.html#b",
+    "title": "April 4 Homework",
+    "section": "b)",
+    "text": "b)\nDraw a diagram in the spirit of Figure 15.8 that captures the complete pooling framework.\n\nDiagrammeR::grViz(\"digraph {\nPopulation -&gt; 'Day 0' -&gt; 'rt_1'\nPopulation -&gt; 'Day 1' -&gt; 'rt_2'\nPopulation -&gt; 'Day 2' -&gt; 'rt_3'\nPopulation -&gt; 'Day 3' -&gt; 'rt_4'\nPopulation -&gt; 'Day 4' -&gt; 'rt_5'\nPopulation -&gt; 'Day 5' -&gt; 'rt_6'\nPopulation -&gt; 'Day 6' -&gt; 'rt_7'\nPopulation -&gt; 'Day 7' -&gt; 'rt_8'\nPopulation -&gt; 'Day 8' -&gt; 'rt_9'\nPopulation -&gt; 'Day 9' -&gt; 'rt_10'\n}\")\n\n\n\n\n\nHere we don’t account for people, so each reaction time should just be clustered by day."
+  },
+  {
+    "objectID": "April4.html#c",
+    "href": "April4.html#c",
+    "title": "April 4 Homework",
+    "section": "c)",
+    "text": "c)\nUsing careful notation, write out the structure for the complete pooled model of Y by X.\n\\(Y_{i} \\mid \\beta_{0}, \\beta_{1}, \\sigma \\sim N (\\mu_{i}, \\sigma^{2})\\) with \\(\\mu_{i} = \\beta_{0} + \\beta_{1}X_{i}\\)\nAbove, the complete pooled model is saying that each Reaction Time (Yi), conditional on an intercept (B0, reaction time at Day 0), a slope (change in reaction time each day), and a common standard deviation is identically ad independently distributed. Each observation is a conditional mean (ui) such that it is distributed via a Gaussian distribution where the mean depends on the unique day."
+  },
+  {
+    "objectID": "April4.html#a-1",
+    "href": "April4.html#a-1",
+    "title": "April 4 Homework",
+    "section": "a)",
+    "text": "a)\nTo explore the no pooled behavior of the data points, construct and discuss separate scatterplots of Reaction by Days for each Subject, including subject-specific trend lines.\n\n# renumber participants so that looping is easier.\nsleepstudy$numeric &lt;- as.numeric(sleepstudy$Subject)\n# empty dataframe to store unique intercept and slope for each runner.\ncoef_df &lt;- data.frame(\"Subject\" = \"\",\n                      \"intercept\" = \"\",\n                      \"Day\" = \"\")\nfor (i in unique(sleepstudy$numeric)) {\n  temp &lt;- stan_glm(\n    Reaction ~ Days, \n    data = sleepstudy[sleepstudy$numeric == i,], family = gaussian, \n    #prior_intercept = normal(50, 2.5, autoscale = TRUE),\n    prior_aux = exponential(1, autoscale = TRUE),\n    chains = 4, iter = 5000*2, seed = 84735, refresh = 0)\n  temp_df &lt;- data.frame(\"Subject\" = i,\n                        \"intercept\" = temp$coefficients[1],\n                        \"Day\" = temp$coefficients[2])\n  # add runner i's intercept and slope to the ith row of larger dataframe\n  coef_df &lt;- rbind(coef_df, temp_df)\n}\n# coef_df saved all columns as character. Here I resave them as factors/numeric\nbr_no_pool_coef_df &lt;- data.frame(\"Subject\" = as.factor(coef_df$Subject),\n                                 \"intercept\" = as.numeric(coef_df$intercept),\n                                 \"Day\" = as.numeric(coef_df$Day))\n# remove first row (is empty)\nbr_no_pool_coef_df &lt;-  br_no_pool_coef_df[-1, ]\n# reset rowname index to start at 1\nrow.names(br_no_pool_coef_df) &lt;- NULL\n\n\nNo pooling graph: stan_glm\n\n# empty list where each runner's graph will be saved.\ntemp_list &lt;- list()  \n# loop through runners, grab their specific intercepts/slope from previous dataframe, and save graph to list\nfor (i in unique(sleepstudy$numeric)) {\n  # runner-specific graph\n  temp_graph &lt;- ggplot(sleepstudy[sleepstudy$numeric == i, ], aes(x = Days, y = Reaction)) + \n    geom_point() +\n    geom_abline(aes_string(intercept = br_no_pool_coef_df[i, 2], slope = br_no_pool_coef_df[i, 3]), color = \"blue\") +\n    ggtitle(paste0(\"Subject \", i)) +\n    ylim(190, 470)\n  # save ith runner graph to temp_list\n  temp_list[[i]] &lt;- temp_graph\n}\n# Use do.call to pass all elements of graph_list to ggarrange\narranged_plots &lt;- do.call(\"ggarrange\", temp_list)\n# Print or display the arranged plots\nprint(arranged_plots)\n\n\n\n\nEach person has a different intercept and slope, and non of these are informed by any of the other participants. This makes it a useless model for prediction in the sense that it isn’t clear how to use any of these estimates when predicting a new participant’s reaction time."
+  },
+  {
+    "objectID": "April4.html#b-1",
+    "href": "April4.html#b-1",
+    "title": "April 4 Homework",
+    "section": "b)",
+    "text": "b)\nDraw a diagram in the spirit of Figure 15.6 that captures the no pooling framework.\n\nDiagrammeR::grViz(\"digraph {\nPopulation -&gt; 'Participant 1' -&gt; 'Day 01' -&gt; 'rt_01'\n'Participant 1' -&gt; 'Day 11' -&gt; 'rt_11'\nPopulation -&gt; 'Participant 2' -&gt; 'Day 02' -&gt; 'rt_02'\n'Participant 2' -&gt; 'Day 12' -&gt; 'rt_12'\n}\")\n\n\n\n\n\nI wasn’t sure if there was a single right way to do this. Basically, each participant has a reaction time for each day. I have shown the first two days for the first 2 participants. Everything is separate, meaning all coefficients will be estimated seperately."
+  },
+  {
+    "objectID": "April4.html#c-1",
+    "href": "April4.html#c-1",
+    "title": "April 4 Homework",
+    "section": "c)",
+    "text": "c)\nUsing careful notation, write out the structure for the no pooled model of Y by X.\n\\(Y_{i} \\mid \\beta_{0i}, \\beta_{1i}, \\sigma_{i} \\sim N (\\mu_{i}, \\sigma_{i}^{2})\\) with \\(\\mu_{i} = \\beta_{0i} + \\beta_{1i}X_{i}\\)\nI believe this is right. Each person will have their own coefficient estimates, so the model must index the beta coefficients as well. I wasn’t sure about the standard deviation, but I decided to index it too given each participant will have a different spread of their reaction times. But if that is wrong, then I would update the equation so it does not index the sigma."
+  },
+  {
+    "objectID": "April4.html#complete-pooled-trendline",
+    "href": "April4.html#complete-pooled-trendline",
+    "title": "April 4 Homework",
+    "section": "Complete-pooled Trendline",
+    "text": "Complete-pooled Trendline\n\n# complete pool\nggarrange(\n  ggplot(sleepstudy[sleepstudy$Subject == 308, ], aes(x = Days, y = Reaction)) + \n    geom_point() +\n    ggtitle(\"Subject 308\") +\n    ylim(min(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335]), max(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335])) +\n    geom_abline(aes(intercept = m.15.8_completepool$coefficients[1], slope = m.15.8_completepool$coefficients[2]), color = \"blue\"),\n  ggplot(sleepstudy[sleepstudy$Subject == 335, ], aes(x = Days, y = Reaction)) + \n    geom_point() +\n    ggtitle(\"Subject 335\") +\n    ylim(min(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335]), max(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335])) +\n    geom_abline(aes(intercept = m.15.8_completepool$coefficients[1], slope = m.15.8_completepool$coefficients[2]), color = \"blue\"),\n  ggplot(sleepstudy[sleepstudy$Subject == 308 | sleepstudy$Subject == 335, ], aes(x = Days, y = Reaction)) + \n    geom_point() +\n    ggtitle(\"Both Subjects\") +\n    ylim(min(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335]), max(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335])) +\n    geom_abline(aes(intercept = m.15.8_completepool$coefficients[1], slope = m.15.8_completepool$coefficients[2]), color = \"blue\"),\n  ncol = 3\n)\n\n\n\n\nWhen we completely pool the data, then the trend line goes exactly through the middle of the pooled data (right graph). However, if we put this trend line through participant 308 and participant 335 individually, the trend line doesn’t fit very well. For participant 335, it is even in the wrong direction."
+  },
+  {
+    "objectID": "April4.html#no-pooled-trendline",
+    "href": "April4.html#no-pooled-trendline",
+    "title": "April 4 Homework",
+    "section": "No-pooled Trendline",
+    "text": "No-pooled Trendline\n\n# complete pool\nggarrange(\n  ggplot(sleepstudy[sleepstudy$Subject == 308, ], aes(x = Days, y = Reaction)) + \n    geom_point() +\n    ggtitle(\"Subject 308\") +\n    ylim(min(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335]), max(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335])) +\n    geom_abline(aes(intercept = no_pool_308$coefficients[1], slope = no_pool_308$coefficients[2]), color = \"blue\"),\n  ggplot(sleepstudy[sleepstudy$Subject == 335, ], aes(x = Days, y = Reaction)) + \n    geom_point() +\n    ggtitle(\"Subject 335\") +\n    ylim(min(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335]), max(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335])) +\n    geom_abline(aes(intercept = no_pool_335$coefficients[1], slope = no_pool_335$coefficients[2]), color = \"red\"),\n  ggplot(sleepstudy[sleepstudy$Subject == 308 | sleepstudy$Subject == 335, ], aes(x = Days, y = Reaction)) + \n    geom_point() +\n    ggtitle(\"Both Subjects\") +\n    ylim(min(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335]), max(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335])) +\n    geom_abline(aes(intercept = no_pool_308$coefficients[1], slope = no_pool_308$coefficients[2]), color = \"blue\") +\n    geom_abline(aes(intercept = no_pool_335$coefficients[1], slope = no_pool_335$coefficients[2]), color = \"red\"),\n  ncol = 3\n)\n\n\n\n\nNow we have a really well fitting trend line for each individual participant. However, when we look at the pooled data (right graph) we don’t have any group level estimate, making prediction of new data impossible."
+  },
+  {
+    "objectID": "April4.html#partial-pooled-trendline",
+    "href": "April4.html#partial-pooled-trendline",
+    "title": "April 4 Homework",
+    "section": "Partial-pooled Trendline",
+    "text": "Partial-pooled Trendline\n\nggarrange(\n  ggplot(sleepstudy[sleepstudy$Subject == 308, ], aes(x = Days, y = Reaction)) + \n    geom_point() +\n    ggtitle(\"Subject 308\") +\n    ylim(200, max(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335])) +\n    geom_abline(aes(intercept = m.15.8_partial_pool$coefficients[1] + ranef(m.15.8_partial_pool)$Subject[1,1], slope = m.15.8_partial_pool$coefficients[2]), color = \"blue\"),\n  ggplot(sleepstudy[sleepstudy$Subject == 335, ], aes(x = Days, y = Reaction)) + \n    geom_point() +\n    ggtitle(\"Subject 335\") +\n    ylim(200, max(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335])) +\n    geom_abline(aes(intercept = m.15.8_partial_pool$coefficients[1] + ranef(m.15.8_partial_pool)$Subject[2,1], slope = m.15.8_partial_pool$coefficients[2]), color = \"blue\"),\n  ggplot(sleepstudy[sleepstudy$Subject == 308 | sleepstudy$Subject == 335, ], aes(x = Days, y = Reaction)) + \n    geom_point() +\n    ggtitle(\"Both Subjects\") +\n    ylim(200, max(sleepstudy$Reaction[sleepstudy$Subject == 308 | sleepstudy$Subject == 335])) +\n    geom_abline(aes(intercept = m.15.8_partial_pool$coefficients[1], slope = m.15.8_partial_pool$coefficients[2]), color = \"blue\"),\n  ncol = 3\n)\n\n\n\n\nAll three panels have different intercepts. The slopes are all the same as this is an intercept only model. But now, we can use the trendline on the right graph to make predictions about new data, and we have also accounted for individual differences (first two panels)."
+  }
+]

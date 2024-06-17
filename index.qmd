@@ -1,0 +1,72 @@
+---
+title: Stephen Pierzchajlo
+about:
+  id: hero-heading
+  template: jolla
+  image: images/avatar.png
+  image-width: 300px
+  links:
+    - icon: envelope-fill
+      text: E-mail
+      href: stephen.pierzchajlo@psychology.su.se
+      aria-label: E-mail
+    - icon: twitter
+      text: Twitter
+      href: https://x.com/pierzchajlo
+      aria-label: Twitter
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=lWkmBdEAAAAJ&hl=en
+      aria-label: Google Scholar
+    - icon: github
+      text: GitHub
+      href: https://github.com/StephenPierzchajlo
+      aria-label: GitHub
+
+listing:
+  - id: projects
+    contents: content/projects
+    type: grid
+    fields: [title, description]
+    categories: false
+    sort-ui: false
+    filter-ui: false
+  - id: posts
+    contents: content/posts
+    fields: [date, title, categories, description]
+    sort: "date desc"
+    max-items: 3
+    type: default
+    categories: false
+    sort-ui: false
+    filter-ui: false
+---
+
+::: {#hero-heading style="text-align: center"}
+MSc Neuroscience\
+Currently a PhD Candidate in Psychology at Stockholm University
+:::
+
+## About
+
+Write Something About Myself Here.
+
+[Learn more](content/about.qmd "Learn more about me")
+
+## Projects
+
+::: {#projects}
+:::
+
+## Blog posts
+
+::: {#posts}
+:::
+
+[More posts](content/blog.qmd "See more blog posts")
+
+## CV
+
+Write Same Thing About Myself As I
+
+## [Learn more](content/cv/cv.qmd "Learn more about my CV")

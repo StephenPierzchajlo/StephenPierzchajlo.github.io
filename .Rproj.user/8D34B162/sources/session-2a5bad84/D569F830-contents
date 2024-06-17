@@ -1,0 +1,55 @@
+project:
+  type: website
+  output-dir: docs
+  preview:
+    port: 4200
+
+website:
+  title: stephenpierzchajlo.com
+  site-url: https://www.stephenpierzchajlo.com/
+  description: Personal website for Stephen Pierzchajlo.
+  favicon: images/favicon.ico
+  reader-mode: false
+  navbar:
+    pinned: false
+    collapse-below: md
+    background: white
+    left:
+      - href: index.qmd
+        text: Home
+      - content/about.qmd
+      #- content/projects.qmd
+      #- content/blog.qmd
+      #- href: content/cv/cv.qmd
+      #  text: CV
+    right:
+      - href: https://x.com/pierzchajlo
+        icon: twitter
+      - href: https://github.com/StephenPierzchajlo
+        icon: github
+  page-footer: 
+    left: "Copyright 2024 - Stephen Pierzchajlo"
+    right: 
+      - icon: github
+        href: https://github.com/
+      - icon: twitter 
+        href: https://twitter.com/
+
+format:
+  html: 
+    fontsize: 20px
+    grid:
+    #  sidebar-width: 300px
+      body-width: 1000px
+    #  margin-width: 300px
+    #  gutter-width: 1.5rem
+    toc: false
+    smooth-scroll: true
+    theme: default
+    #css: 
+    # - styles/styles.css
+    csl: styles/apa.csl
+
+freeze: auto
+
+editor: visual

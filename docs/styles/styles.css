@@ -14,8 +14,25 @@
 
 /* Reduce the font size of the entire body */
 body {
-    font-size: 50%;  /* Shrinks font size for the entire page */
+    font-size: 90%;  /* Shrinks font size for the entire page */
 }
+
+/* Optionally adjust specific elements */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 90%;  /* Reduce headings */
+}
+
+/* Adjust the hero heading section */
+#hero-heading {
+    font-size: 80%;  /* Reduce font size for the hero heading */
+}
+
+/* Modify padding and margins to create a less "zoomed" feel */
+body, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0.5em 0; /* Reduce margins for headings and paragraphs */
+    padding: 0.5em; /* Adjust padding */
+}
+
 
 /* Remove focus outline from code blocks */
 summary {

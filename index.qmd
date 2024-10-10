@@ -20,12 +20,12 @@ about:
       aria-label: Google Scholar
     - icon: github
       text: GitHub
-      href: https://github.com/StephenPierzchajlo
+      href: https://stephenpierzchajlo.github.io/
       aria-label: GitHub
 
 listing:
   - id: projects
-    contents: content/projects
+    contents: content/posts
     type: grid
     fields: [title, description]
     categories: false

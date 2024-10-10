@@ -1,8 +1,5 @@
 ---
 title: Stephen Pierzchajlo
-format:
-  html:
-    css: styles.css  # Link to your custom stylesheet
 about:
   id: hero-heading
   template: jolla
@@ -25,6 +22,9 @@ about:
       text: GitHub
       href: https://github.com/StephenPierzchajlo
       aria-label: GitHub
+format:
+  html:
+    css: styles/styles.css  # Ensure this line is included
 
 listing:
   - id: projects

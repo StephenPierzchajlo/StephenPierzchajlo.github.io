@@ -1,5 +1,8 @@
 ---
 title: Stephen Pierzchajlo
+format:
+  html:
+    css: styles.css  # Link to your custom stylesheet
 about:
   id: hero-heading
   template: jolla

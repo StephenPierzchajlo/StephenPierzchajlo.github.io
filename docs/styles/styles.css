@@ -12,6 +12,11 @@
   flex-basis: 10%;
 }
 
+/* Reduce the font size of the entire body */
+body {
+    font-size: 90%;  /* Shrinks font size for the entire page */
+}
+
 /* Remove focus outline from code blocks */
 summary {
   outline: none;

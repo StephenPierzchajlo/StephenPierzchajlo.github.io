@@ -20,7 +20,7 @@ about:
       aria-label: Google Scholar
     - icon: github
       text: GitHub
-      href: https://StephenPierzchajlo/stephenpierzchajlo.github.io/
+      href: https://github.com/StephenPierzchajlo
       aria-label: GitHub
 
 listing:

@@ -14,12 +14,12 @@
 
 /* Reduce the font size of the entire body */
 body {
-    font-size: 50%;  /* Shrinks font size for the entire page */
+    font-size: 80%;  /* Shrinks font size for the entire page */
 }
 
 /* Optionally adjust specific elements */
 h1, h2, h3, h4, h5, h6 {
-    font-size: 90%;  /* Reduce headings */
+    font-size: 80%;  /* Reduce headings */
 }
 
 /* Adjust the hero heading section */

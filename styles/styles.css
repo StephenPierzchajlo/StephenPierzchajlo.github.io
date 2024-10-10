@@ -12,6 +12,11 @@
   flex-basis: 10%;
 }
 
+body {
+    zoom: 90%; /* Adjust the percentage to zoom out (90% = slightly zoomed out) */
+}
+
+
 /* Remove focus outline from code blocks */
 summary {
   outline: none;

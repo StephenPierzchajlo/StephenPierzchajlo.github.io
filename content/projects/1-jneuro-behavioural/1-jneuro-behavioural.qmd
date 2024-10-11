@@ -3,7 +3,7 @@ title: "Journal Of Neuroscience: Bayesian Reanalysis"
 author: "Stephen Pierzchajlo"
 format: 
   html:
-    self-contained: true
+    self-contained: false
 editor: visual
 ---
 

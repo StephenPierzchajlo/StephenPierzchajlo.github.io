@@ -28,7 +28,7 @@ format:
 
 listing:
   - id: projects
-    contents: content/posts
+    contents: content/projects
     type: grid
     fields: [title, description]
     categories: false
@@ -52,7 +52,7 @@ Currently a PhD Candidate in Psychology at Stockholm University
 
 ## About
 
-Write Something About Myself Here.
+I am an experimental psychologist and cognitive neuroscientist with a passion for data analysis and statistics.
 
 [Learn more](content/about.qmd "Learn more about me")
 

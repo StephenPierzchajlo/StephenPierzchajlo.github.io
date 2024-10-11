@@ -28,7 +28,7 @@ format:
 
 listing:
   - id: projects
-    contents: content/posts
+    contents: content/projects
     type: grid
     fields: [title, description]
     categories: false

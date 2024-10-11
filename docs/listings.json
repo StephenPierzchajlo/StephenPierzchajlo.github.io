@@ -2,6 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/content/projects/1-jneuro-behavioural/1-jneuro-behavioural.knit.html",
+      "/content/projects/1-jneuro-behavioural/1-jneuro-behavioural.html",
       "/content/posts/1-eyeball-test/1-eyeball-test.html"
     ]
   }

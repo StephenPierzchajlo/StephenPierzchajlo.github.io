@@ -1,6 +1,6 @@
 ---
 title: Stephen Pierzchajlo
-#about:
+about:
   id: hero-heading
   template: jolla
   image: images/avatar.png
